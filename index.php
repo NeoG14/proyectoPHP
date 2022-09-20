@@ -8,13 +8,19 @@
 </head>
 <body>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Cocina</a>
-        <a href="#">Bar-tender</a>
-        <a href="#">Cajero</a>
+        <a href="index.php">Inicio</a>
+        <a href="cocina.php">Cocina</a>
+        <a href="bar.php">Bar-tender</a>
+        <a href="cajero.php">Cajero</a>
     </nav>
     <div>
-
+        <form action="">
+            <label for="">Comida/Bebida</label>
+            <input type="text">
+            <button>Agregar a la lista</button>
+            <label for="">Comentarios:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
     </div>
 </body>
 </html>

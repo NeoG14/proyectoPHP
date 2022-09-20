@@ -7,6 +7,11 @@
     <title>Cajero</title>
 </head>
 <body>
-    
+<nav>
+        <a href="index.php">Inicio</a>
+        <a href="cocina.php">Cocina</a>
+        <a href="bar.php">Bar-tender</a>
+        <a href="cajero.php">Cajero</a>
+    </nav>
 </body>
 </html>
