@@ -7,7 +7,7 @@
     --blanco: #FFFFFF;
     --negro: #000000;
 }
-
+/* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1 rem = 10px */
@@ -15,8 +15,70 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+/* Globales */
 body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;;
+}
+h1,h2,h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header__logo {
+    height: 20rem;
+    margin: 3rem 0;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: var(--colorPrimario);
+    margin-bottom: 1rem;
+}
+.navegacion a {
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--colorPrimario);
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--blanco);
 }
