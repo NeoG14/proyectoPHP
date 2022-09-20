@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header contenedor">
         <a href="index.php" >
             <img class="header__logo" src="/img/logo.png" alt="imagen logo">
         </a>
     </header>
 
-        <nav class="navegacion contenedor">
+        <nav class="navegacion">
             <a class="navegacion__enlace" href="cocina.php">Cocina</a>
             <a class="navegacion__enlace" href="bar.php">Bar-tender</a>
             <a class="navegacion__enlace" href="cajero.php">Cajero</a>
