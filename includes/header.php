@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header class="header contenedor">
+    <header class="header">
         <a href="index.php" >
             <img class="header__logo" src="/img/logo.png" alt="imagen logo">
         </a>
