@@ -2,7 +2,8 @@
     --fuenterHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
-    --colorPrimario: #784D3C;
+    --colorPrimario: #164e4e;
+    --colorSecundario: #0f7224;
     --gris: #E1E1E1;
     --blanco: #FFFFFF;
     --negro: #000000;
@@ -46,6 +47,26 @@ h2 {
 h3 {
     font-size: 2.4rem;
 }
+ul {
+    list-style: none;
+}
+.boton {
+    font-family: var(--fuenterHeading);
+    color: var(--blanco);
+    background-color: var(--gris);
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
+    transition: ease-in .6s;
+    background-color: var(--colorSecundario);
+}
 
 /* Header */
 .header {
@@ -81,4 +102,17 @@ h3 {
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--blanco);
+}
+
+/* Cocina */
+.lista {
+    text-align: center;
+    border: solid 1px var(--gris);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--colorPrimario);
+}
+
+.lista li {
+    font-size: 2.4rem;
 }
