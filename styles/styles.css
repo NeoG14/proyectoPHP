@@ -2,8 +2,8 @@
     --fuenterHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
-    --colorPrimario: #164e4e;
-    --colorSecundario: #0f7224;
+    --colorPrimario: #473335;
+    --colorSecundario: #774c3c;
     --gris: #E1E1E1;
     --blanco: #FFFFFF;
     --negro: #000000;
@@ -15,6 +15,14 @@ html {
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+/* Gradient */
+body {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* Centra horizontal y vericalmente */
 }
 
 /* Globales */
@@ -31,7 +39,7 @@ img {
 }
 .contenedor {
     max-width: 120rem;
-    margin: 0 auto;;
+    margin: 0 auto;
 }
 h1,h2,h3 {
     text-align: center;
@@ -39,13 +47,19 @@ h1,h2,h3 {
     font-family: var(--fuentePrincipal);
 }
 h1 {
-    font-size: 4rem;
+    font-size: 4.8rem;
 }
 h2 {
-    font-size: 3.2rem;
+    font-size: 4rem;
 }
 h3 {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
 }
 ul {
     list-style: none;
@@ -61,6 +75,7 @@ ul {
     font-weight: bold;
     margin-bottom: 2rem;
     border: none;
+    background-color: var(--colorSecundario);
 }
 .boton:hover {
     cursor: pointer;
@@ -68,36 +83,81 @@ ul {
     background-color: var(--colorSecundario);
 }
 
+/* Utilidades */
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.34);
+    -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.34);
+    box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.34);
+}
+
 /* Header */
 .header {
-    display: flex;
-    justify-content: center;
-}
-.header__logo {
     height: 20rem;
-    margin: 3rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* Centra horizontal y vericalmente */ 
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+}
+.logo {
+    color: var(--negro);
+}
+.logo h1 {
+    font-size: 6rem;
+}
+.logo__nombre {
+    font-weight: normal;
+}
+.logo__bold {
+    font-weight: bold;
 }
 
 .navegacion {
     display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    background-color: var(--colorPrimario);
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secundario);
+    gap: 2rem; 
 }
 .navegacion a {
+    color: var(--negro);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-family: var(--fuentePrincipal);
+}
+
+.navegacion a:hover {
     color: var(--blanco);
-    text-transform: uppercase;
-    font-size: 3rem;
+    transition: ease-in .2s;
 }
 
 /* Footer */
-.footer {
-    background-color: var(--colorPrimario);
-    padding: 1rem;
-    text-align: center;
-}
 
+.footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.footer a {
+    color: var(--blanco);
+}
 .footer p {
     font-size: 2rem;
     text-transform: uppercase;
@@ -105,14 +165,50 @@ ul {
 }
 
 /* Cocina */
+.cocina {
+    text-align: center;
+}
+.cocina img {
+    display: inline;
+}
+.cocina__titulo {
+    text-transform: uppercase;
+    display: inline;
+}
+.cocina__logo {
+    height: 6rem;
+    width: 6rem;
+}
 .lista {
     text-align: center;
-    border: solid 1px var(--gris);
+    border: solid 3px var(--colorPrimario);
     border-radius: 1rem;
     padding: 1rem;
-    background-color: var(--colorPrimario);
+    background-color: rgba(71, 51, 53, .95);
+    margin: 2rem 0;
+}
+.lista ul {
+    padding: 0;
+}
+.lista li {
+    border: solid 3px var(--gris);
+    border-radius: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.lista p {
+    margin: 0;
+    color: var(--blanco);
 }
 
-.lista li {
-    font-size: 2.4rem;
+.lista .boton {
+    border-radius: .6rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    background-color: var(--negro);
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
 }
